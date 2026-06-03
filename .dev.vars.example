@@ -1,0 +1,4 @@
+# Local preview only — copy to .dev.vars for `npm run preview`
+# Production variables are set in the Cloudflare dashboard.
+
+NEXTJS_ENV=development

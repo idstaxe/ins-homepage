@@ -14,6 +14,11 @@
 # next.js
 /.next/
 /out/
+.open-next/
+
+# cloudflare local secrets (copy from .dev.vars.example)
+.dev.vars
+.wrangler/
 
 # production
 /build

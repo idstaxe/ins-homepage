@@ -33,7 +33,7 @@ Edit `.env.local`:
 | Variable | Description |
 |----------|-------------|
 | `NEXT_PUBLIC_CALENDLY_URL` | Your Calendly scheduling link |
-| `NEXT_PUBLIC_WEB3FORMS_KEY` | Web3Forms access key |
+| `NEXT_PUBLIC_WEB3FORMS_KEY` | Web3Forms access key — see [Form email setup guide](docs/form-email-setup.md) |
 | `NEXT_PUBLIC_GA_MEASUREMENT_ID` | GA4 Measurement ID (`G-XXXXXXXXXX`) |
 | `NEXT_PUBLIC_SITE_URL` | Production URL (e.g. `https://ins.fi`) |
 
@@ -52,9 +52,19 @@ npm run build
 npm start
 ```
 
+## Documentation
+
+- [Cloudflare deployment guide](docs/cloudflare-deployment.md) — env vars, domain, production setup
+- [Contact form email setup (Web3Forms)](docs/form-email-setup.md) — step-by-step guide to receive form submissions by email
+
 ## Deploy
 
-Recommended: [Vercel](https://vercel.com) — zero-config Next.js hosting. Add environment variables in the Vercel dashboard.
+The site is deployed on **Cloudflare Pages**.
+
+- **[Cloudflare deployment guide](docs/cloudflare-deployment.md)** — environment variables, custom domain, redeploy
+- **[Contact form email setup](docs/form-email-setup.md)** — receive form submissions via Web3Forms
+
+Add all `NEXT_PUBLIC_*` variables in Cloudflare (**Workers & Pages → your project → Settings → Environment variables**), then redeploy.
 
 ## GA4 setup (post-launch)
 
